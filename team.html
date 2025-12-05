@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Stay Ahead - الفريق</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div id="toast-container"></div>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><i class="fa-solid fa-chart-line"></i> Stay Ahead</a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+                <li><a href="predict.html" data-i18n="nav_predict">التنبؤ الذكي</a></li>
+                <li><a href="dashboard.html" data-i18n="nav_dashboard">لوحة التحكم</a></li>
+                <li><a href="team.html" data-i18n="nav_team">الفريق</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+            </ul>
+
+            <div class="nav-controls" style="display: flex; gap: 15px; align-items: center;">
+                <button id="theme-toggle" style="background:none; border:none; cursor:pointer; font-size:1.2rem; color: #333;">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                
+                <button id="lang-toggle" style="padding: 5px 12px; border-radius: 20px; border: 1px solid #ccc; cursor:pointer; background:transparent; font-weight:bold;">
+                    English
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title" data-i18n="team_title">فريق العمل</h2>
+            <p class="section-subtitle" style="text-align:center; max-width:800px; margin:0 auto 30px;" data-i18n="team_subtitle">
+                وراء Stay Ahead فريق متكامل يجمع بين تطوير الواجهات، والذكاء الاصطناعي، وتحليل البيانات، لبناء حلول تخدم شركات الاشتراكات الرقمية.
+            </p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="image.png" alt="هشام النابلسيه">
+                    </div>
+                    <h3>هشام النابلسيه</h3>
+                    <p class="team-role" data-i18n="member1_role">Frontend Developer</p>
+                    <p class="team-bio" data-i18n="member1_bio">
+                        مسؤول عن تجربة المستخدم، بناء الواجهات الأمامية، وربط المنصة مع نماذج التنبؤ لتقديم تجربة سلسلة لشركات SaaS.
+                    </p>
+                    <div class="team-links">
+                        <a href="#" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo avatar dark-av">
+                        <span>A</span>
+                    </div>
+                    <h3>عبدالعزيز عامري</h3>
+                    <p class="team-role" data-i18n="member2_role">Backend & Integration</p>
+                    <p class="team-bio" data-i18n="member2_bio">
+                        مسؤول عن تصميم الـ APIs، إدارة الاتصال بقواعد البيانات، وضمان تكامل نموذج الذكاء الاصطناعي مع النظام التشغيلي.
+                    </p>
+                    <div class="team-links">
+                        <a href="#" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo avatar blue-av">
+                        <span>A</span>
+                    </div>
+                    <h3>عبدالرحمن الخالدي</h3>
+                    <p class="team-role" data-i18n="member3_role">Data Analyst</p>
+                    <p class="team-bio" data-i18n="member3_bio">
+                        يعمل على تنظيف البيانات، تحليلها، وبناء لوحات مراقبة تساعد فرق العمل على فهم سلوك العملاء واتخاذ قرارات مدعومة بالبيانات.
+                    </p>
+                    <div class="team-links">
+                        <a href="#" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo avatar dark-av">
+                        <span>M</span>
+                    </div>
+                    <h3>محمد العبدالمحسن</h3>
+                    <p class="team-role" data-i18n="member4_role">ML Engineer</p>
+                    <p class="team-bio" data-i18n="member4_bio">
+                        يطوّر نماذج التنبؤ بالمغادرة، ويعمل على تحسين دقة النماذج وتقييمها باستخدام أحدث تقنيات تعلم الآلة.
+                    </p>
+                    <div class="team-links">
+                        <a href="#" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo avatar blue-av">
+                        <span>W</span>
+                    </div>
+                    <h3>وصايف الخرب</h3>
+                    <p class="team-role" data-i18n="member5_role">ML Engineer</p>
+                    <p class="team-bio" data-i18n="member5_bio">
+                        تساهم في تصميم الـ features وتحسين أداء النموذج بما يضمن قراءة أدق لسلوك المستخدمين في منصات الاشتراك.
+                    </p>
+                    <div class="team-links">
+                        <a href="#" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo avatar dark-av">
+                        <span>M</span>
+                    </div>
+                    <h3>ميرا الفريح</h3>
+                    <p class="team-role" data-i18n="member6_role">ML Engineer</p>
+                    <p class="team-bio" data-i18n="member6_bio">
+                        تركز على تجربة التدريب، ضبط المعاملات، واختبار النماذج في سيناريوهات واقعية لشركات SaaS.
+                    </p>
+                    <div class="team-links">
+                        <a href="#" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
